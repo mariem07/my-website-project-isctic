@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+   --main-bg-color: #000;
+   --logo-color : rgba(116,25,109,255) ; 
+   --text-color: #fff;
+   --second-main-color : #24c3dbd2;
+   --light-color : rgba(163, 161, 161, 0.877) ;
+   --font-main :'Nunito', sans-serif;
+   --font-second :  'Inconsolata', monospace;
+}
+
+*{
+   font-family: 'Nunito', sans-serif  ;
+   margin: 0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   color: white;
+}
+*::selection{
+   color: rgba(163, 161, 161, 0.877);
+}
+
+body {
+   background-color: black;
+}
+
+.input-group {
+   display: flex;
+   width: 30%;
+   padding: 5rem ;
+
+}
+.input-group input {
+  color: black;
+  margin-right: 2rem;
+  border-radius: 5px;
+  
+  padding: 2rem;
+  padding-right: 7rem;
+}
+.input-group button {
+  color: white;
+  font-weight:600;
+}
+/*bg image */
+.bg-img {
+   width: 200px;
+   position: absolute;
+   top: 70px;
+   right: 50px;
+   z-index:-200;
+}
+
+/* each container default status */ 
+.container{
+   margin: 0rem auto;
+   padding: 2rem 3rem;
+   position: relative;
+}
+.container h1 {
+   margin-bottom: 1rem;
+   position: relative;
+   text-transform: capitalize;
+   color:rgba(163, 161, 161, 0.877) ;
+}
+.container h1::after{
+   content: '';
+   width: 600px;
+   height: 2px;
+   background:rgba(116,25,109,255) ;
+   position: relative;
+   bottom: 10px;
+   left: 300px;
+   display: block;
+}
+/*bg image */
+.home-bg-img {
+   width: 250px;
+   position: absolute ; 
+   top: -220px;
+   right: -150px;
+   z-index: 200;
+   opacity: 1;
+}
+/* latest products starts here */ 
+
+/* products-sort starts here */
+.products-sort {
+   display: flex;
+   margin-left: 70rem;
+}
+.products-sort a {
+   margin: .5rem 1.5rem;
+   padding: .2rem 1rem;
+}
+/*products-samples starts here */ 
+
+.products-samples{
+   display: flex;
+   flex-wrap: wrap;
+}
+.products-sample:hover{
+   transform: translateY(-8px);
+}
+.products-samples div {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+.products-samples img {
+   width: 200px;
+   height: 200px;
+   padding: .5rem 1rem;
+}
+.products-samples h3 {
+   padding: 1.8rem 0rem;
+   font-weight: 700;
+}
+.products-samples p {
+  padding-bottom: 1.2rem;
+  font-weight: 600;
+}
+.products-samples .see-more {
+  height: 50%;
+  margin: auto;
+  padding: .5rem 1rem;
+  font-weight: 300;
+}
+
+* latest-events starts here */ 
+.latest-events{
+   position: relative;
+ 
+}
+.latest-events .event {
+   display: flex;
+   margin: 1.5rem auto ;
+   
+}
+.latest-events .event img {
+   width: 250px;
+   height: 200px;
+   padding: .5rem 1rem;
+}
+.latest-events .event div {
+   padding: .5rem 2.5rem;
+   margin: 1.5rem auto;
+  
+}
+.latest-events .event h3 {
+   text-transform: capitalize;
+   font-size: 1.4em;
+   
+}
+.latest-events .event p {
+   padding: 1.5rem 0rem ;
+   text-transform: capitalize;
+   font-size: 1em;
+   line-height: 1.5em;
+   color: rgba(163, 161, 161, 0.877);
+   
+}
+.latest-events .event a {
+  width: 25%;
+  margin: .5rem auto;
+}
+.latest-events .check {
+   padding: 5rem auto ;
+   float: right;
+}
+
+/* latest-events ends here */ 
+
+/* communities starts here */ 
+.community-samples img {
+   width: 50px;
+   height: 60px;
+   border-radius: 50%;
+}
+.community-samples {
+display: flex;
+justify-content: space-between;
+text-align: center;
+margin-top: 2.5rem;
+
+}
+.community-samples h3 {
+   padding-top: 1rem ;
+   padding-bottom: 1.5rem
+   ;
+}
+/* communities starts here */ 
+
+
+
+
+
+/* utilty button */
+.btn{
+   font-size: .9em;
+   padding: 0.7rem 2rem;
+   border: 2px solid white;
+   box-shadow: 0.4rem 0.4rem rgba(116,25,109,255) , -0.4rem -0.4rem #01d7fa;
+   transition: .3sc ease-in-out;
+   background-color: black;
+   font-family:  'Inconsolata', monospace;
+}
+.btn:hover{
+   box-shadow: 0.1rem 0.1rem rgba(116,25,109,255) , 0.1rem 0.1rem #01d7fa;
+   color: white;
+}

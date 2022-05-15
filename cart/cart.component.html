@@ -1,0 +1,102 @@
+<app-nav></app-nav>
+<body>
+<div class="cart-page">
+   <h1 class="your-bag"><i class="fa-solid fa-cart-arrow-down"></i> Your_bag</h1>
+   <table>
+      <tr>
+         <th>product</th>
+         <th>quantity</th>
+         <th>subtotal</th>
+      </tr>
+      <tr>
+         <td>
+            <div class="cart-info">
+               <img src="../assets/img/skate41.jpg" alt="">
+               <div>
+                  <p>red skate</p>
+                  <small>price : 55 DT</small>
+                  <br>
+                  <a href="">remove</a>
+               </div>
+            </div>
+         </td>
+         <td>
+            <input type="number" name="price" id="price" value="2" >
+         </td>
+         <td>55 TD </td>
+      </tr>
+
+      <tr>
+         <td>
+            <div class="cart-info">
+               <img src="./assets/img/skate43.jpg" alt="">
+               <div>
+                  <p>red skate</p>
+                  <small>price : 85 DT</small>
+                  <br>
+                  <a href=""> remove</a>
+               </div>
+            </div>
+         </td>
+         <td>
+            <input type="number" name="price" id="price" value="1">
+         </td>
+         <td>85 TD </td>
+      </tr>
+
+      <tr>
+         <td>
+            <div class="cart-info">
+               <img src="../assets/img/skate45.jpg" alt="">
+               <div>
+                  <p>red skate</p>
+                  <small>price : 50 DT</small>
+                  <br>
+                  <a href="">remove</a>
+               </div>
+            </div>
+         </td>
+         <td>
+            <input type="number" name="price" id="price" value="2">
+         </td>
+         <td>50 TD </td>
+      </tr>
+
+      <tr>
+         <td>
+            <div class="cart-info">
+               <img src="../assets/img/skate51.jpg" alt="">
+               <div>
+                  <p>red skate</p>
+                  <small>price : 75 DT</small>
+                  <br>
+                  <a href=""><i class="fa-solid fa-xmark"></i> remove</a>
+               </div>
+            </div>
+         </td>
+         <td>
+            <input type="number" name="price" id="price" value="6">
+         </td>
+         <td>75 TD </td>
+      </tr>
+   </table>
+
+   <div class="total-price">
+      <table>
+         <tr>
+            <td>total</td>
+            <td>250 TD</td>
+         </tr>
+         <tr>
+            <td>number of items </td>
+            <td>4</td>
+         </tr>
+      </table>
+   </div>
+</div>
+<div class="buy">
+   <a routerLink="/buy" routerLinkActive="active-link" class="btn">proceed to buy </a>
+</div>
+
+</body>
+

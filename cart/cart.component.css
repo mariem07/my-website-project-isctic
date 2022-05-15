@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+   --main-bg-color: #000;
+   --logo-color : rgba(116,25,109,255) ; 
+   --text-color: rgb(243, 239, 239);
+   --second-main-color : #24c3dbd2;
+   --light-color : rgba(163, 161, 161, 0.877) ;
+   --font-main :'Nunito', sans-serif;
+   --font-second :  'Inconsolata', monospace;
+}
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin: 0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   color:white;
+}
+*::selection{
+   color:rgba(116,25,109,255)  ;
+}
+body{
+   background: black;
+}
+/* cart starts here --------------------*/ 
+
+.cart-page {
+   margin: 0rem  auto;
+   width: 80%;
+}
+/* your bag ------------------ */
+.your-bag {
+   text-transform: uppercase;
+   font-family: 'Inconsolata', monospace;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+/* your bag end -------------*/
+table {
+   width: 100%;
+   border-collapse: collapse ;
+}
+table th {
+   font-family: 'Inconsolata', monospace;
+   font-size: 1.5em;
+   
+}
+.cart-info {
+   display: flex;
+   flex-wrap: wrap;
+}
+.cart-info div {
+   margin-left: 15px;
+}
+.cart-info div p {
+   font-family:'Inconsolata', monospace;
+}
+.cart-info div a {
+   font-family:'Inconsolata', monospace;
+}
+th {
+   text-align: left ;
+   padding: 8px;
+   color: #fff;
+   background-color:rgba(163, 161, 161, 0.877) ;
+   font-weight: normal;
+}
+td {
+   padding: 10px 5px;
+}
+td input {
+   width: 40px;
+   height: 30px;
+   padding: 5px;
+   color:black;
+}
+td a {
+   color: rgba(163, 161, 161, 0.877);
+   font-size: 1.1em;
+}
+td a i {
+   color: rgba(116,25,109,255);
+   font-size: 1.1em;
+}
+td img {
+   width: 80px;
+   height: 80px;
+   margin-left: 10px;
+}
+/* total price table -------- */
+.total-price {
+   display: flex ; 
+   justify-content: flex-end;
+}
+.total-price table {
+   border-top: 3px solid rgba(163, 161, 161, 0.877);
+   width: 100%;
+   max-width: 520px;
+}
+td:last-child{
+   text-align: right;
+}
+th:last-child{
+   text-align: right;
+}
+
+/* buy bottom -------*/
+.buy {
+   display: flex ; 
+   justify-content: flex-end;
+   padding-bottom: 8rem;
+   margin-top: 5rem;
+   margin-right: 15rem;
+}
+
+
+/* utilty button */
+.btn{
+   font-size: .9em;
+   padding: 0.7rem 2rem;
+   background : black;
+   border: 2px solid white;
+   box-shadow: 0.3rem 0.3rem rgba(116,25,109,255), -0.3rem -0.3rem #24c3dbd2;
+   transition: .3sc ease-in-out;
+}
+.btn:hover{
+   box-shadow: 0.1rem 0.1rem rgba(116,25,109,255), 0.1rem 0.1rem #24c3dbd2;
+}
+
+ 
+

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+   --main-bg-color: #000;
+   --logo-color : rgba(116,25,109,255) ; 
+   --text-color: rgb(243, 239, 239);
+   --second-main-color : #24c3dbd2;
+   --light-color : rgba(163, 161, 161, 0.877) ;
+   --font-main :'Nunito', sans-serif;
+   --font-second :  'Inconsolata', monospace;
+}
+
+*{
+   font-family:  'Nunito', sans-serif;
+   margin: 0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   color: white;
+}
+*::selection{
+   color: var(--logo-color);
+}
+
+body{
+   background:black;
+}
+.event-headline {
+   text-align: center;
+   font-size: 4.5rem;
+   color: rgba(163, 161, 161, 0.877)  ;
+   padding-top: 2rem;
+}
+/* events starts*/
+.all-events {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   margin: 0 auto;
+   
+}
+.all-events .event {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 2.5rem;
+   transition: .3sc linear;
+}
+.all-events .event:hover {
+   padding-left: 3.5rem;
+}
+.all-events .event img {
+   width: 650px;
+   height: 300px;
+   padding:.5rem;
+   border-radius: 5px;
+}
+.all-events .event .event-des {
+   margin: 4rem 5rem;
+}
+.all-events .event h2 {
+   font-family: 'Inconsolata', monospace;
+   margin-bottom: .5rem;
+}
+.all-events .event .event-text {
+  color: rgba(163, 161, 161, 0.877);
+  margin-bottom: 1rem;
+}
+.all-events .event .event-date {
+   margin-bottom: 2rem;
+   font-size: 2em;
+   color: #24c3dbd2;
+   text-transform: uppercase;
+}
+
+/* utilty button */
+.btn{
+   font-size: .9em;
+   padding: 0.7rem 2rem;
+   background : black;
+   border: 2px solid white;
+   box-shadow: 0.3rem 0.3rem rgba(116,25,109,255), -0.3rem -0.3rem #24c3dbd2;
+   transition: .3sc ease-in-out;
+}
+.btn:hover{
+   box-shadow: 0.1rem 0.1rem rgba(116,25,109,255), 0.1rem 0.1rem #24c3dbd2;
+   color: white;
+}

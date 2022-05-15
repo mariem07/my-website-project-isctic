@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root {
+   --main-bg-color: #000;
+   --logo-color : rgba(116,25,109,255) ; 
+   --text-color: rgb(243, 239, 239);
+   --second-main-color : #24c3dbd2;
+   --light-color : rgba(163, 161, 161, 0.877) ;
+   --font-main :'Nunito', sans-serif;
+   --font-second :  'Inconsolata', monospace;
+}
+
+*{
+   font-family:  'Nunito', sans-serif;
+   margin: 0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   color: white;
+}
+*::selection{
+   color:  rgba(116,25,109,255);
+}
+
+body{
+   background:black;
+}
+.img {
+   text-align: center;
+   padding-top: 2rem;
+}
+img {
+   width: 900px;
+   height: 400px;
+   border-radius: 10px;
+}
+/* conatiner starts here */ 
+.container {
+   text-align: center;
+ 
+   margin: 0rem auto ;
+   margin-top: 5rem;
+   padding-bottom: 5rem;
+}
+.event-title {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 3em;
+   color: aqua;
+   text-transform: uppercase;
+}
+.event-date {
+   text-transform: uppercase;
+   padding-bottom: 2rem;
+   padding-top: 2rem;
+   transition: .3s linear;
+}
+.event-date:hover {
+   padding-left: .8em;
+   color: rgba(116,25,109,255);
+   cursor: pointer;
+}
+.event-des {
+   padding: 0rem 10rem;
+   line-height: 2.5em;
+   color: rgba(163, 161, 161, 0.877);
+}
+
+
+/* utilty button */
+.btn{
+   font-size: 1em;
+   padding: 0.9rem 2rem;
+   background : black;
+   border: 2px solid white;
+   box-shadow: 0.3rem 0.3rem rgba(116,25,109,255), -0.3rem -0.3rem #24c3dbd2;
+   transition: .3sc ease-in-out;
+   font-family: 'Courier New', Courier, monospace;
+   margin-left: 68rem;
+   margin-bottom: 5rem;
+}
+.btn:hover{
+   box-shadow: 0.1rem 0.1rem rgba(116,25,109,255), 0.1rem 0.1rem #24c3dbd2;
+   color: white;
+}
